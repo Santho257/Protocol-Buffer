@@ -1,0 +1,12 @@
+option java_package = "com.santho.proto";
+option java_outer_classname = "CollegeProto";
+
+message Student {
+  required string registerNumber = 1;
+  required string name = 2;
+  optional double CGPA = 3;
+}
+
+message College {
+  repeated Student students = 1;
+}
